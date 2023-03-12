@@ -591,3 +591,35 @@ plt.ylabel("Nombre de couples owl:sameAs trouvé")
 plt.legend()
 plt.show()
 
+
+#ajouter un graphe avec les precision, recall et f-mesure sur une seule propriete
+precision_opus_jaro_000, recall_opus_jaro_000, f_precision_opus_jaro_000 = validation("Resultat/resultat_opus_jaro_000.ttl", ["opus"])
+precision_opus_jaro_010, recall_opus_jaro_010, f_precision_opus_jaro_010 = validation("Resultat/resultat_opus_jaro_010.ttl", ["opus"])
+precision_opus_jaro_020, recall_opus_jaro_020, f_precision_opus_jaro_020 = validation("Resultat/resultat_opus_jaro_020.ttl", ["opus"])
+precision_opus_jaro_030, recall_opus_jaro_030, f_precision_opus_jaro_030 = validation("Resultat/resultat_opus_jaro_030.ttl", ["opus"])
+precision_opus_jaro_040, recall_opus_jaro_040, f_precision_opus_jaro_040 = validation("Resultat/resultat_opus_jaro_040.ttl", ["opus"])
+precision_opus_jaro_050, recall_opus_jaro_050, f_precision_opus_jaro_050 = validation("Resultat/resultat_opus_jaro_050.ttl", ["opus"])
+precision_opus_jaro_060, recall_opus_jaro_060, f_precision_opus_jaro_060 = validation("Resultat/resultat_opus_jaro_060.ttl", ["opus"])
+precision_opus_jaro_070, recall_opus_jaro_070, f_precision_opus_jaro_070 = validation("Resultat/resultat_opus_jaro_070.ttl", ["opus"])
+precision_opus_jaro_080, recall_opus_jaro_080, f_precision_opus_jaro_080 = validation("Resultat/resultat_opus_jaro_080.ttl", ["opus"])
+precision_opus_jaro_090, recall_opus_jaro_090, f_precision_opus_jaro_090 = validation("Resultat/resultat_opus_jaro_090.ttl", ["opus"])
+precision_opus_jaro_100, recall_opus_jaro_100, f_precision_opus_jaro_100 = validation("Resultat/resultat_opus_jaro_100.ttl", ["opus"])
+
+
+f_mesures_opus = [f_precision_opus_jaro_000, f_precision_opus_jaro_010, f_precision_opus_jaro_020, f_precision_opus_jaro_030, f_precision_opus_jaro_040, f_precision_opus_jaro_050, f_precision_opus_jaro_060, f_precision_opus_jaro_070, f_precision_opus_jaro_080, f_precision_opus_jaro_090, f_precision_opus_jaro_100]
+
+recalls_opus = [recall_opus_jaro_000, recall_opus_jaro_010, recall_opus_jaro_020, recall_opus_jaro_030, recall_opus_jaro_040, recall_opus_jaro_050, recall_opus_jaro_060, recall_opus_jaro_070, recall_opus_jaro_080, recall_opus_jaro_090, recall_opus_jaro_100]
+
+precision_opus = [precision_opus_jaro_000, precision_opus_jaro_010, precision_opus_jaro_020, precision_opus_jaro_030, precision_opus_jaro_040, precision_opus_jaro_050, precision_opus_jaro_060, precision_opus_jaro_070, precision_opus_jaro_080, precision_opus_jaro_090, precision_opus_jaro_100]    
+
+x2 = x 
+
+plt.figure(figsize=(9,6))
+plt.plot(x2, f_mesures_opus, color="red", label="f-mesure", marker='D', markersize=marker_size)
+plt.plot(x2, recalls_opus, color="green", label="recall", marker='x', markersize=marker_size)
+plt.plot(x2, precision_opus, color="blue", label="precision", marker='H', markersize=marker_size)
+plt.title("Mesure de la propriété \"Opus\" avec Jaro")
+plt.xlabel("Seuil")
+plt.ylabel("valeur des mesures")
+plt.legend()
+plt.show()
