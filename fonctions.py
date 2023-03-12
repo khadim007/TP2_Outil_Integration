@@ -25,7 +25,8 @@ def compareExpressions(graphe1, graphe2, initP, initM, seuil):
                     somme += compareProprietes(exp1, exp2, graphe1, graphe2, cle, initM)
                     nombre += 1
 
-            if (somme / nombre) >= seuil:
+            if nombre == 0: sortie(10, initM)
+            if(somme / nombre) >= seuil:
                 print(exp1.expression, " <----> ", exp1.expression)
                 updateFichier("resultat.ttl", exp1.expression, exp2.expression)
     print("La comparaison est terminee")
@@ -61,6 +62,7 @@ def compareProprietes(exp1, exp2, graphe1, graphe2, propriete, initM):
                 somme += compare(proprietes1, proprietes2, cle) * initM[cle]
                 nombre += initM[cle]
 
+    if nombre == 0: sortie(11, initM)
     return somme / nombre
 
 def getPropriete(propriete, expression, graphe):
@@ -142,3 +144,18 @@ def updateFichier(fileName, exp1, exp2):
     with open(fileName, "a") as f:
         f.write(content)
         f.close()
+
+def sortie(s, initM):
+    if(s == 0):
+        print("\n\nVous n'avez pas choisi de seuil !!")
+    elif(s == 10):
+        print("\n\nVous n'avez pas choisi de proprietes !!")
+    elif(s == 11):
+        print("\n\nVous n'avez pas choisi de mesures !!")
+    else:
+        i = 0
+        for cle, valeur in initM.items():
+            if(i == (s-1)):
+                print("\n\nVous n'avez pas choisi de poid pour la mesure "+cle+" !!")
+            i+=1
+    exit(0)
