@@ -25,7 +25,7 @@ def main():
     graphe2.parse(target)
 
     openFile(resultat)
-    sg.theme('DarkAmber')
+    sg.theme('DarkBlue')
 
     gauche = [
         [sg.T('Propriétés ', font=('Helvetica', 16))],
@@ -40,11 +40,11 @@ def main():
         [sg.Checkbox('Jaro', default=False, key="m1"), sg.T("             "), sg.Combo(valPoids, key='1')],
         [sg.Checkbox('Jaccard', default=False, key="m2"), sg.T("        "), sg.Combo(valPoids, key='2')],
         [sg.Checkbox('Monge Elkan', default=False, key="m3"), sg.T(" "), sg.Combo(valPoids, key='3')],
+        [sg.Checkbox('Levenshtein', default=False, key="m7"), sg.T("    "), sg.Combo(valPoids, key='7')],
+        [sg.Checkbox('JaroWrinkler', default=False, key="m8"), sg.T("   "), sg.Combo(valPoids, key='8')],
         [sg.Checkbox('NumSimilarity', default=False, key="m4"), sg.T(""), sg.Combo(valPoids, key='4')],
         [sg.Checkbox('Ngram', default=False, key="m5"), sg.T("           "), sg.Combo(valPoids, key='5')],
         [sg.T("     Ngram Size       "), sg.Combo(valPoids, key='5-2')],
-        [sg.Checkbox('Levenshtein', default=False, key="m7"), sg.T("    "), sg.Combo(valPoids, key='7')],
-        [sg.Checkbox('JaroWrinkler', default=False, key="m8"), sg.T("   "), sg.Combo(valPoids, key='8')],
         [sg.Checkbox('uriEquality', default=False, key="m9"), sg.T("      "), sg.Combo(valPoids, key='9')]]
     affichage = [
         [sg.T("OUTIL D'INTEGRATION DE DONNEES", justification='center', size=(largeur,1), font=('Helvetica', 22))],
@@ -93,7 +93,7 @@ def main():
                 i+=1
                 print(cle," : ", initM[cle])
 
-            compareExpressions(graphe1, graphe2, initP, initM, seuil)
+            comparaison(graphe1, graphe2, initP, initM, seuil)
     window.close()
 
 if __name__ == '__main__':

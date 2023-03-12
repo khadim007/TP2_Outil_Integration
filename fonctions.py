@@ -12,9 +12,9 @@ def openFile(fileName):
     with open(fileName, "w") as f:
         f.close()
 
-def compareExpressions(graphe1, graphe2, initP, initM, seuil):
-    expressions1 = getExpressions(graphe1)
-    expressions2 = getExpressions(graphe2)
+def comparaison(graphe1, graphe2, initP, initM, seuil):
+    expressions1 = extraireExpressions(graphe1)
+    expressions2 = extraireExpressions(graphe2)
 
     for exp1 in expressions1:
         for exp2 in expressions2:
@@ -31,7 +31,7 @@ def compareExpressions(graphe1, graphe2, initP, initM, seuil):
                 updateFichier("resultat.ttl", exp1.expression, exp2.expression)
     print("La comparaison est terminee")
 
-def getExpressions(graphe):
+def extraireExpressions(graphe):
     req = """
         PREFIX efrbroo: <http://erlangen-crm.org/efrbroo/>
         SELECT DISTINCT ?expression
@@ -47,9 +47,9 @@ def compareProprietes(exp1, exp2, graphe1, graphe2, propriete, initM):
     proprietes1 = []
     proprietes2 = []
     for row in exp1:
-        proprietes1.append(getPropriete(propriete, row, graphe1))
+        proprietes1.append(recupProprietes(propriete, row, graphe1))
     for row in exp2:
-        proprietes2.append(getPropriete(propriete, row, graphe2))
+        proprietes2.append(recupProprietes(propriete, row, graphe2))
 
     for cle, valeur in initM.items():
         if(cle == "ngram1"):
@@ -65,7 +65,7 @@ def compareProprietes(exp1, exp2, graphe1, graphe2, propriete, initM):
     if nombre == 0: sortie(11, initM)
     return somme / nombre
 
-def getPropriete(propriete, expression, graphe):
+def recupProprietes(propriete, expression, graphe):
     if (propriete == "clef"):
         req = """ 
             PREFIX mus: <http://data.doremus.org/ontology#>
