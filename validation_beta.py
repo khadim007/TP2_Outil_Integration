@@ -470,62 +470,21 @@ precision_uriequality_100, recall_uriequality_100, f_precision_uriequality_100 =
 import matplotlib.pyplot as plt 
 
 x = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
-f_precision_jaro = [f_precision_jaro_000, f_precision_jaro_010,
-                    f_precision_jaro_020, f_precision_jaro_030,
-                    f_precision_jaro_040, f_precision_jaro_050,
-                    f_precision_jaro_060, f_precision_jaro_070,
-                    f_precision_jaro_080, f_precision_jaro_090,
-                    f_precision_jaro_100]
+f_precision_jaro = [f_precision_jaro_000, f_precision_jaro_010, f_precision_jaro_020, f_precision_jaro_030, f_precision_jaro_040, f_precision_jaro_050, f_precision_jaro_060, f_precision_jaro_070, f_precision_jaro_080, f_precision_jaro_090, f_precision_jaro_100]
 
-f_precision_jaccard = [f_precision_jaccard_000, f_precision_jaccard_010,
-                       f_precision_jaccard_020, f_precision_jaccard_030,
-                       f_precision_jaccard_040, f_precision_jaccard_050,
-                       f_precision_jaccard_060, f_precision_jaccard_070,
-                       f_precision_jaccard_080, f_precision_jaccard_090,
-                       f_precision_jaccard_100]
+f_precision_jaccard = [f_precision_jaccard_000, f_precision_jaccard_010, f_precision_jaccard_020, f_precision_jaccard_030, f_precision_jaccard_040, f_precision_jaccard_050, f_precision_jaccard_060, f_precision_jaccard_070, f_precision_jaccard_080, f_precision_jaccard_090, f_precision_jaccard_100]
 
-f_precision_mongeelkan = [f_precision_mongeelkan_000, f_precision_mongeelkan_010,
-                          f_precision_mongeelkan_020, f_precision_mongeelkan_030,
-                          f_precision_mongeelkan_040, f_precision_mongeelkan_050,
-                          f_precision_mongeelkan_060, f_precision_mongeelkan_070,
-                          f_precision_mongeelkan_080, f_precision_mongeelkan_090,
-                          f_precision_mongeelkan_100]
+f_precision_mongeelkan = [f_precision_mongeelkan_000, f_precision_mongeelkan_010, f_precision_mongeelkan_020, f_precision_mongeelkan_030, f_precision_mongeelkan_040, f_precision_mongeelkan_050, f_precision_mongeelkan_060, f_precision_mongeelkan_070, f_precision_mongeelkan_080, f_precision_mongeelkan_090, f_precision_mongeelkan_100]
 
-f_precision_numsimilarity = [f_precision_numsimilarity_000, f_precision_numsimilarity_010,
-                             f_precision_numsimilarity_020, f_precision_numsimilarity_030,
-                             f_precision_numsimilarity_040, f_precision_numsimilarity_050,
-                             f_precision_numsimilarity_060, f_precision_numsimilarity_070,
-                             f_precision_numsimilarity_080, f_precision_numsimilarity_090,
-                             f_precision_numsimilarity_100]
+f_precision_numsimilarity = [f_precision_numsimilarity_000, f_precision_numsimilarity_010, f_precision_numsimilarity_020, f_precision_numsimilarity_030, f_precision_numsimilarity_040, f_precision_numsimilarity_050, f_precision_numsimilarity_060, f_precision_numsimilarity_070, f_precision_numsimilarity_080, f_precision_numsimilarity_090, f_precision_numsimilarity_100]
 
-f_precision_ngram = [f_precision_ngram_000, f_precision_ngram_010,
-                     f_precision_ngram_020, f_precision_ngram_030,
-                     f_precision_ngram_040, f_precision_ngram_050,
-                     f_precision_ngram_060, f_precision_ngram_070,
-                     f_precision_ngram_080, f_precision_ngram_090,
-                     f_precision_ngram_100]
+f_precision_ngram = [f_precision_ngram_000, f_precision_ngram_010, f_precision_ngram_020, f_precision_ngram_030, f_precision_ngram_040, f_precision_ngram_050, f_precision_ngram_060, f_precision_ngram_070, f_precision_ngram_080, f_precision_ngram_090, f_precision_ngram_100]
 
-f_precision_levenshtein = [f_precision_levenshtein_000, f_precision_levenshtein_010,
-                           f_precision_levenshtein_020, f_precision_levenshtein_030,
-                           f_precision_levenshtein_040, f_precision_levenshtein_050, 
-                           f_precision_levenshtein_060, f_precision_levenshtein_070,
-                           f_precision_levenshtein_080, f_precision_levenshtein_090,
-                           f_precision_levenshtein_100]
+f_precision_levenshtein = [f_precision_levenshtein_000, f_precision_levenshtein_010, f_precision_levenshtein_020, f_precision_levenshtein_030, f_precision_levenshtein_040, f_precision_levenshtein_050, f_precision_levenshtein_060, f_precision_levenshtein_070, f_precision_levenshtein_080, f_precision_levenshtein_090, f_precision_levenshtein_100]
 
-f_precision_jarowrinkler = [f_precision_jarowrinkler_000, f_precision_jarowrinkler_010,
-                            f_precision_jarowrinkler_020, f_precision_jarowrinkler_030,
-                            f_precision_jarowrinkler_040, f_precision_jarowrinkler_050,
-                            f_precision_jarowrinkler_060, f_precision_jarowrinkler_070, 
-                            f_precision_jarowrinkler_080, f_precision_jarowrinkler_090,
-                            f_precision_jarowrinkler_100]
+f_precision_jarowrinkler = [f_precision_jarowrinkler_000, f_precision_jarowrinkler_010, f_precision_jarowrinkler_020, f_precision_jarowrinkler_030, f_precision_jarowrinkler_040, f_precision_jarowrinkler_050, f_precision_jarowrinkler_060, f_precision_jarowrinkler_070, f_precision_jarowrinkler_080, f_precision_jarowrinkler_090, f_precision_jarowrinkler_100]
 
-
-f_precision_uriequality = [f_precision_uriequality_000, f_precision_uriequality_010,
-                           f_precision_uriequality_020, f_precision_uriequality_030,
-                           f_precision_uriequality_040, f_precision_uriequality_050,
-                           f_precision_uriequality_060, f_precision_uriequality_070,
-                           f_precision_uriequality_080, f_precision_uriequality_090,
-                           f_precision_uriequality_100]
+f_precision_uriequality = [f_precision_uriequality_000, f_precision_uriequality_010, f_precision_uriequality_020, f_precision_uriequality_030, f_precision_uriequality_040, f_precision_uriequality_050, f_precision_uriequality_060, f_precision_uriequality_070, f_precision_uriequality_080, f_precision_uriequality_090, f_precision_uriequality_100]
 
 marker_size = 5
 
@@ -543,7 +502,7 @@ plt.plot(x, f_precision_uriequality, color="purple", label="UriEquality", marker
 plt.subplots_adjust(left=0.1)
 
 # ajouter une légende en dehors du graphe
-plt.legend(bbox_to_anchor=(1.05, 0.7))
+plt.legend()#bbox_to_anchor=(1.05, 0.7))
 
 plt.title("Résultat de la propriété \"titre\" avec toutes les mesures implantées")
 plt.xlabel("Seuil")
@@ -555,6 +514,80 @@ plt.gcf().set_size_inches(13, 6)
 plt.show()
 
 #ajouter un graphe avec les precision, recall et f-mesure sur une seule propriete
+f_mesures_titre = [f_precision_jaro_000, f_precision_jaro_010, f_precision_jaro_020, f_precision_jaro_030, f_precision_jaro_040, f_precision_jaro_050, f_precision_jaro_060, f_precision_jaro_070, f_precision_jaro_080, f_precision_jaro_090, f_precision_jaro_100]
+
+recalls_jaro = [recall_jaro_000, recall_jaro_010, recall_jaro_020, recall_jaro_030, recall_jaro_040, recall_jaro_050, recall_jaro_060, recall_jaro_070, recall_jaro_080, recall_jaro_090, recall_jaro_100]
+
+precision_jaro = [precision_jaro_000, precision_jaro_010, precision_jaro_020, precision_jaro_030, precision_jaro_040, precision_jaro_050, precision_jaro_060, precision_jaro_070, precision_jaro_080, precision_jaro_090, precision_jaro_100]    
+
+x2 = x 
+
+plt.figure(figsize=(9,6))
+plt.plot(x2, f_mesures_titre, color="red", label="f-mesure", marker='D', markersize=marker_size)
+plt.plot(x2, recalls_jaro, color="green", label="recall", marker='x', markersize=marker_size)
+plt.plot(x2, precision_jaro, color="blue", label="precision", marker='H', markersize=marker_size)
+plt.title("Mesure de la propriété \"Titre\" avec Jaro")
+plt.xlabel("Seuil")
+plt.ylabel("valeur des mesures")
+plt.legend()
+plt.show()
 
 #ajouter un graphe avec chaque propriete le nombre des tuples dans 
 #le fichier de reference et dans le nombre tuples dans le fichier resultat
+
+pairs_titre = []
+with open("Resultat/resultat_titre_jaro_100.ttl", "r") as f:
+    lines = f.read().strip().split('\n\n')
+    for line in lines:
+        e1, _, e2 = line.strip().split('\n')
+        pairs_titre.append((e1[1:-1], e2[1:-1]))
+
+pairs_clef = []
+with open("Resultat/resultat_clef_jaro_100.ttl", "r") as f:
+    lines = f.read().strip().split('\n\n')
+    for line in lines:
+        e1, _, e2 = line.strip().split('\n')
+        pairs_clef.append((e1[1:-1], e2[1:-1]))
+
+pairs_note = []
+with open("Resultat/resultat_note_jaro_100.ttl", "r") as f:
+    lines = f.read().strip().split('\n\n')
+    for line in lines:
+        if line:
+            e1, _, e2 = line.strip().split('\n')
+            pairs_note.append((e1[1:-1], e2[1:-1]))
+
+pairs_genre = []
+with open("Resultat/resultat_genre_jaro_100.ttl", "r") as f:
+    lines = f.read().strip().split('\n\n')
+    for line in lines:
+        e1, _, e2 = line.strip().split('\n')
+        pairs_genre.append((e1[1:-1], e2[1:-1]))
+
+pairs_compositeur = []
+with open("Resultat/resultat_compositeur_jaro_100.ttl", "r") as f:
+    lines = f.read().strip().split('\n\n')
+    for line in lines:
+        e1, _, e2 = line.strip().split('\n')
+        pairs_compositeur.append((e1[1:-1], e2[1:-1]))
+
+pairs_opus = []
+with open("Resultat/resultat_opus_jaro_100.ttl", "r") as f:
+    lines = f.read().strip().split('\n\n')
+    for line in lines:
+        e1, _, e2 = line.strip().split('\n')
+        pairs_opus.append((e1[1:-1], e2[1:-1]))
+
+x3 = ["Clef", "Titre", "Note", "Genre", "Compositeur", "Opus"]
+y_mon_outil = [len(pairs_clef), len(pairs_titre), len(pairs_note), len(pairs_genre), len(pairs_compositeur), len(pairs_opus)]
+y_ref = [len(alignements_clef), len(alignements_titre), len(alignements_note), len(alignements_genre), len(alignements_compositeur), len(alignements_opus)]
+
+plt.figure(figsize=(9,6))
+plt.plot(x3, y_mon_outil, color="red", label="mon resultat", marker='D', markersize=marker_size)
+plt.plot(x3, y_ref, color="blue", label="resultat reference", marker='x', markersize=marker_size)
+plt.title("Difference entre les resultats de notre outil et celui du fichier de reference (BETA)")
+plt.xlabel("Propriétés")
+plt.ylabel("Nombre de couples owl:sameAs trouvé")
+plt.legend()
+plt.show()
+
