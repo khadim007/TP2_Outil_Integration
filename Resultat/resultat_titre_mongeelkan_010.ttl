@@ -2944,10 +2944,6 @@
 
 <http://data.doremus.org/expression/7697d03e-8be3-37da-8dce-056b098cc711>
     <http://www.w3.org/2002/07/owl#sameAs>
-<http://data.doremus.org/expression/5198886f-a8e3-3a9c-b4ef-0fbce43e192d>
-
-<http://data.doremus.org/expression/7697d03e-8be3-37da-8dce-056b098cc711>
-    <http://www.w3.org/2002/07/owl#sameAs>
 <http://data.doremus.org/expression/328e5cf5-b59f-3d0d-bfc1-aef405b2df30>
 
 <http://data.doremus.org/expression/7697d03e-8be3-37da-8dce-056b098cc711>

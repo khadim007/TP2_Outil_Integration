@@ -1,0 +1,60 @@
+<http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/9583f934-6aab-3a69-8d65-8052a7e1529d>
+
+<http://data.doremus.org/expression/80030f39-08a6-3874-937f-e5b50ecc51fd>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/f37824be-2fe3-3457-b953-7fca18501d60>
+
+<http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/c78882f0-8787-3cdf-a9ba-a9e5807c8778>
+
+<http://data.doremus.org/expression/1a9d4c71-691e-39ca-86c1-724f44e20e70>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/65fb2976-df6f-342c-bef2-3b15965fcae3>
+
+<http://data.doremus.org/expression/a1e86c44-2227-323f-9a7b-11250b3c408b>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/b851a5c7-686a-3fe2-a405-88a3c3bdb969>
+
+<http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/d4176405-36f8-3a01-a676-1b8fa75796c6>
+
+<http://data.doremus.org/expression/22590f4c-a206-3f0f-b1fb-6a7019617630>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/54d67920-2391-3b3a-aa92-d7350d4e7dca>
+
+<http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/9583f934-6aab-3a69-8d65-8052a7e1529d>
+
+<http://data.doremus.org/expression/c04dbd4c-34a9-326d-8dad-aa961195f451>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/f37824be-2fe3-3457-b953-7fca18501d60>
+
+<http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/c78882f0-8787-3cdf-a9ba-a9e5807c8778>
+
+<http://data.doremus.org/expression/c042ab46-5a5b-3dd6-9edd-70e28fffe64a>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/65fb2976-df6f-342c-bef2-3b15965fcae3>
+
+<http://data.doremus.org/expression/07ebd1d5-8570-326b-8162-fc760032b971>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/5198886f-a8e3-3a9c-b4ef-0fbce43e192d>
+
+<http://data.doremus.org/expression/7697d03e-8be3-37da-8dce-056b098cc711>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/8d4933fb-409e-30c7-b9f5-3ca3056833f3>
+
+<http://data.doremus.org/expression/c6d549f1-eadb-33fb-919e-0359271ceb69>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/80a20425-de7d-31a2-a257-91c3b4d5c86e>
+
+<http://data.doremus.org/expression/c9e52b81-d42f-3da2-9efc-87e15b2f48a3>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/453d8f1c-6320-3658-9c52-9d90f3e7a164>
+

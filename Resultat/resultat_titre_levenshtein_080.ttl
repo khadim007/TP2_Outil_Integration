@@ -1,0 +1,12 @@
+<http://data.doremus.org/expression/393f054f-6431-3bdd-bf09-a7c482edaa9e>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/d4176405-36f8-3a01-a676-1b8fa75796c6>
+
+<http://data.doremus.org/expression/07ebd1d5-8570-326b-8162-fc760032b971>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/5198886f-a8e3-3a9c-b4ef-0fbce43e192d>
+
+<http://data.doremus.org/expression/7697d03e-8be3-37da-8dce-056b098cc711>
+    <http://www.w3.org/2002/07/owl#sameAs>
+<http://data.doremus.org/expression/8d4933fb-409e-30c7-b9f5-3ca3056833f3>
+
