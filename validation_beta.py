@@ -529,6 +529,8 @@ f_precision_uriequality = [f_precision_uriequality_000, f_precision_uriequality_
 
 marker_size = 5
 
+plt.figure(figsize=(9,6))
+
 plt.plot(x, f_precision_jaro, color="blue", label="Jaro", marker='o', markersize=marker_size)
 plt.plot(x, f_precision_jaccard, color="red", label="Jaccard", marker='s', markersize=marker_size)
 plt.plot(x, f_precision_mongeelkan, color="green", label="MongeElkan", marker='^', markersize=marker_size)
@@ -538,11 +540,16 @@ plt.plot(x, f_precision_levenshtein, color="maroon", label="Levenshtein", marker
 plt.plot(x, f_precision_jarowrinkler, color="orange", label="JaroWrinkler", marker='P', markersize=marker_size)
 plt.plot(x, f_precision_uriequality, color="purple", label="UriEquality", marker='H', markersize=marker_size)
 
-# ajouter une légende en dehors du graphe
-plt.legend(bbox_to_anchor=(1.05, 0.7), loc='upper left')
+plt.subplots_adjust(left=0.1)
 
+# ajouter une légende en dehors du graphe
+plt.legend(bbox_to_anchor=(1.05, 0.7))
+
+plt.title("Résultat de la propriété \"titre\" avec toutes les mesures implantées")
 plt.xlabel("Seuil")
 plt.ylabel("F-mesure")
+
+plt.gcf().set_size_inches(13, 6)
 
 # affiche le graphe
 plt.show()
